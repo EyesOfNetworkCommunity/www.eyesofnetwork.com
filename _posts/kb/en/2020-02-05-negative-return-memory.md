@@ -18,7 +18,7 @@ Symptom present on **EON 5.2 +**.
 
 # Cause
 
-The most likely cause is the presence of the package * net-snmp * in version higher than **5.7.2-43**.
+The most likely cause is the presence of the package *net-snmp* in version higher than **5.7.2-43**.
 
 To be sure, run the following command :
 
@@ -31,7 +31,7 @@ Finally, look at the *Version* and *Revision* fields.
 
 # Resolution 
 
-This problem is resolved with the update **1.2** of the package ** nagios-plugins-eon**. This update includes the fix for the plug-in *[check_snmp_mem.pl](https://github.com/EyesOfNetworkCommunity/nagios-plugins-eon/commit/2ba9ae4d526374fff0af10a458f8abca89841280 "Github link")*.
+This problem is resolved with the update **1.2** of the package **nagios-plugins-eon**. This update includes the fix for the plug-in *[check_snmp_mem.pl](https://github.com/EyesOfNetworkCommunity/nagios-plugins-eon/commit/2ba9ae4d526374fff0af10a458f8abca89841280 "Github link")*.
 
 Please update the package by running the following command :
 

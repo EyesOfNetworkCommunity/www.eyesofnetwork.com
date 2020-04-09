@@ -14,7 +14,7 @@ Displaying a negative value for the percentage of memory usage on Linux hosts.
 
 ![Negative Memory](/img/kb/2020-02-05-negative-return-memory/mem_nok.png)
 
-Symptom present on ** EON 5.2 + **.
+Symptom present on **EON 5.2 +**.
 
 # Cause
 
@@ -38,6 +38,7 @@ Please update the package by running the following command :
 ```sh
 yum update nagios-plugins-eon
 ```
+
 **Result :**
 
 ![Memory OK](/img/kb/2020-02-05-negative-return-memory/mem_ok.png)

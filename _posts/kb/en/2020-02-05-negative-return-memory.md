@@ -4,7 +4,7 @@ title: "Negative return for 'memory' service on Linux hosts"
 desc: "Displaying a negative value for the percentage of memory usage on Linux hosts."
 ref: post-negative-return-memory
 date: 2020-02-05 20:42 +0100
-categories: kb
+categories: kb,EyesOfNetwork
 lang: en
 permalink: /en/kb/:title
 ---
@@ -12,7 +12,7 @@ permalink: /en/kb/:title
 
 Displaying a negative value for the percentage of memory usage on Linux hosts.
 
-![Negative Memory](https://www.eyesofnetwork.com/thumbs/1280x660c/2020-03/mem-negative.png)
+![Negative Memory](/img/kb/2020-02-05-negative-return-memory/mem_nok.png)
 
 Symptom present on ** EON 5.2 + **.
 
@@ -38,7 +38,6 @@ Please update the package by running the following command :
 ```sh
 yum update nagios-plugins-eon
 ```
-<br/>
-**Result : **
-<br/><br/>
-![Memory OK](https://www.eyesofnetwork.com/thumbs/1000x1000r/kb/mem-ok.png)
+**Result :**
+
+![Memory OK](/img/kb/2020-02-05-negative-return-memory/mem_ok.png)

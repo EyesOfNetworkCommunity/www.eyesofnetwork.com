@@ -7,11 +7,13 @@
 
   This folder contains all Knowledge bases in the **specified language**.
 
-* Specified images for your knowledge base must be deployed in a **specific folder** :
-`/_posts/kb/img/`
+* Specified images for your knowledge base must be deployed in a **specific folder**,
+the folder name must contains the **date of publication** and your **knowledge base name** in a specific format :
 
-  This folder contains all knowledge bases images **regardless of language**.
+  `/img/kb/YYYY-MM-DD-<KnowledgeBaseName>/`
 
+  To use an image in your knowledge base you must specify an **absolute path**.
+  
 ### 2 - File name structure
 The file name must contains the **date of publication** and your **knowledge base name** in a specific format :
 
@@ -30,7 +32,7 @@ The header of the file contains specific keys :
   * "permalink" **must** be set following the format `/"lang"/kb/:title`.
   
 Then we can put the content in the file.
-  
+
 Basic structure example : 
 ```
 ---
@@ -42,7 +44,7 @@ categories: kb
 lang: <lang>
 permalink: /<lang>/kb/:title
 ---
-<Content>
+<ContentInMarkDown>
 ```
 
 * Example in english :

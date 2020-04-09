@@ -4,7 +4,7 @@ title: "Error in Thruk 'You are not authorized.'"
 desc: "Following the update of thruk, a problem of access to the view of the components can occur if it is not accompanied by an eonconf update."
 ref: post-thruk-you-are-not-authorized
 date: 2020-04-09 21:30 +0100
-categories: kb,EyesOfNetwork,Thruk
+categories: [kb, EyesOfNetwork, Thruk]
 lang: en
 permalink: /en/kb/:title
 ---

@@ -4,7 +4,7 @@ title: "Negative return for 'memory' service on Linux hosts"
 desc: "Displaying a negative value for the percentage of memory usage on Linux hosts."
 ref: post-negative-return-memory
 date: 2020-02-05 20:42 +0100
-categories: kb,EyesOfNetwork
+categories: [kb, EyesOfNetwork]
 lang: en
 permalink: /en/kb/:title
 ---

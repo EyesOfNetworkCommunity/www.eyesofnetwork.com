@@ -1,0 +1,81 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+lang:
+  nickname:
+    en: "English"
+    fr: "Français"
+title:
+  en: EyesOfNetwork - Information system supervision solution
+  fr: EyesOfNetwork - Solution de supervision du système d'information
+description:
+  en: Information system supervision solution.
+  fr: Solution de supervision du système d'information.
+url: "" # the base hostname & protocol for your site
+
+###########################
+#### Start of nav-menu ####
+
+nav-menu:
+  home:
+    en:
+      name: "Home"
+    fr:
+      name: "Intro"
+    class: "menu-active"
+    url: "#intro"
+
+  about:
+    en:
+      name: "Solution Eyes"
+    fr:
+      name: "Solution Eyes"
+    class: ""
+    url: "#about"
+
+  product:
+    en:
+      name: "Details by product"
+    fr:
+      name: "Détails par produit"
+    class: ""
+    url: "#products"
+
+  news:
+    en:
+      name: "News"
+    fr:
+      name: "Actualités"
+    class: ""
+    url: "#news"
+
+  community:
+    en:
+      name: "Community"
+    fr:
+      name: "Communauté"
+    class: ""
+    url: "#community"
+
+  download:
+    en:
+      name: "Download"
+    fr:
+      name: "Télécharger"
+    class: "download"
+    url: "#download"
+    
+##### End of nav-menu #####
+###########################
+
+
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown

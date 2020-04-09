@@ -1,0 +1,35 @@
+{%- if page.ref != 'index' -%}
+  <header id="header" class="strong">
+{%- else -%}
+  <header id="header">
+{%- endif -%}
+
+    <div class="container">
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          {% for menu in site.nav-menu %}
+          <li class="{{ menu[1].class }}"><a href="/{{ page.lang }}{{ menu[1].url }}">{{ menu[1][page.lang].name }}</a>
+          </li>
+          {% endfor %}
+          <li class="nav-lang">
+            Language
+            <ul class="menu submenu vertical" style="display: none;">
+              {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+              {% for post in posts %} <li><a href="{{ post.url | prepend: site.baseurl }}"
+                  class="{{ post.lang }}">{{ site.lang.nickname[post.lang] }}</a></li> {% endfor %}
+
+              {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+              {% for page in pages %} <li><a href="{{ page.url | prepend: site.baseurl }}"
+                  class="{{ page.lang }}">{{ site.lang.nickname[page.lang] }}</a></li> {% endfor %}
+            </ul>
+          </li>
+          <li></li>
+        </ul>
+
+      </nav>
+      <!-- #nav-menu-container -->
+      <div id="logo" class="pull-left">
+        <a href="/{{ page.lang }}/#intro" class="scrollto"><img src="/img/logo.png?2bb841cf4b" alt="" title=""></a>
+      </div>
+    </div>
+  </header>

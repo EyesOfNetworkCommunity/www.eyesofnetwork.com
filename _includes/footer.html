@@ -1,0 +1,65 @@
+<footer id="footer">
+</footer>
+<!-- #footer -->
+
+<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- JavaScript Libraries -->
+
+<script src="/lib/jquery/jquery.min.js?a05b85c645"></script>
+<script src="/lib/jquery/jquery-migrate.min.js?fc01c7070c"></script>
+<script src="/lib/bootstrap/js/bootstrap.bundle.min.js?f668a9c0bf"></script>
+<script src="/lib/easing/easing.min.js?7966b010d2"></script>
+<script src="/lib/superfish/hoverIntent.js?17f37a9d24"></script>
+<script src="/lib/superfish/superfish.min.js?4694b7d2c7"></script>
+<script src="/lib/wow/wow.min.js?d2679fe592"></script>
+<script src="/lib/venobox/venobox.min.js?7712660b0d"></script>
+<script src="/lib/owlcarousel/owl.carousel.min.js?2e5d5fcfd1"></script>
+<script src="/lib/magnific-popup/jquery.magnific-popup.min.js?358235b3c2"></script>
+{%- if page.layout == "post" -%}
+  <script src="/lib/mermaid/mermaid.min.js"></script>
+  <script src="/lib/highlightjs/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+  var config = {
+      startOnLoad:true,
+      theme: 'neutral', //dark,default,forest,neutral
+      flowchart:{
+              htmlLabels:true
+          }
+  };
+  mermaid.initialize(config);
+  //window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+  mermaid.init(undefined, $(".language-mermaid"));
+  </script>
+{%- endif -%}
+<!-- Contact Form JavaScript File -->
+<!-- <script src="contactform/contactform.js"></script> -->
+
+<!-- Template Main Javascript File -->
+<script src="/js/main.js?932ce84ef6"></script>
+
+<script type="text/javascript">
+
+  // magnific popup for gallery
+  $(document).ready(function () {
+    $('.magnific, div.imageholder a').magnificPopup({
+      type: 'image'
+      // other options
+    });
+  });
+
+  //modal for Release note
+  $(function () {
+    $('.popup-modal').magnificPopup({
+      type: 'inline',
+      midClick: false,
+      preloader: false,
+      modal: false
+    });
+    $(document).on('click', '.popup-modal-dismiss', function (e) {
+      e.preventDefault();
+      $.magnificPopup.close();
+    });
+  });
+</script>

@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Security issues"
+desc: "Several vulnerabilities have been detected in EyesOfNetwork, patches are available."
+ref: post-Vulnerability
+date: 2020-02-06 17:58 +0100
+categories: news
+lang: en
+---
+
+This Wednesday, February 5, several vulnerabilities were detected in the EyesOfNetwork solution.
+
+| CVE | Issue |
+| --- | --- |
+| CVE-2020-8654 | Discovery module to allows to run arbitrary OS command. <br>We were able to run the 'id' command with the following payload in the target field : ;id #'. |
+| CVE-2020-8655 | LPE via nmap NSE script<br>As the apache user is allowed to run nmap as root, we were able to execute arbitrary commands by providing a specially crafted NSE script. |
+| CVE-2020-8656 | SQLi in API in getApiKey function on 'username' field<br>PoC: onapi/getApiKey?username=' union select sleep(3),0,0,0,0,0,0,0 or ' |
+| CVE-2020-8657 | Calculable/guessable API key |
+
+
+The association of these vulnerabilities allows an attacker to obtain
+a shell with root rights on an instance of EON 5.2 and 5.3 without
+prior information or login.
+
+A patch was released Thursday, February 6, then packaged and is now available on the EyesOfNetwork repositories. [[5.2](https://download.eyesofnetwork.com/repos/5.2/updates/), [5.3](https://download.eyesofnetwork.com/repos/5.3/updates/)].
+
+The patch is applied by executing the following command:
+
+```bash
+yum update eonapi
+```
+
+** ⚠ Attention ⚠ **:
+  Updating the eonapi package to version> = 2.0-2 will cause the
+regeneration of the APIKEY of the admin user. The new key should
+be retrieved and informed in third-party consumer tools
+API (ex: EyesOfIndicator, ...).

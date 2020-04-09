@@ -1,0 +1,27 @@
+---
+layout: default
+lang: en
+ref: kb-post
+permalink: /en/kb
+---
+<main class="post">
+    <div class="post-list">
+        {%- if site.posts.size > 0 -%}
+        <h1>Knowledge Bases</h1>
+        {% assign posts=site.posts | where:"lang", page.lang | where:"categories", "kb" %}
+        <ul>
+            {% for post in posts %}
+            <HR>
+            <li>
+                <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                <div class="post-meta">
+                    <p>{{ post.desc }}</p>
+                    {%- assign date_format = site.minima.date_format | default: "%m/%d/%Y" -%}
+                    <span class="post-date">{{ post.date | date: date_format }}</span>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        {%- endif -%}
+    </div>
+</main>

@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Canal IRC"
+desc: "Retrouvez les barbues de la communauté Eyes sur le canal <strong>#EyesOfNetwork</strong> des serveurs Freenode."
+ref: post-irc-channel
+date: 2019-12-01 11:02 +0100
+categories: news
+lang: fr
+---

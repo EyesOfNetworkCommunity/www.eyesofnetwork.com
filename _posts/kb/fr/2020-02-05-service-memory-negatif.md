@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Valeur de retour négative pour le service 'memory' sur les hôtes linux"
+desc: "Affichage d'une valeur négative pour le pourcentage d'utilisation de la mémoire sur les hôtes Linux."
+ref: post-negative-return-memory
+date: 2020-02-05 20:42 +0100
+categories: kb
+lang: fr
+permalink: /fr/kb/:title
+---
+# Symptômes
+
+Affichage d'une valeur négative pour le pourcentage d'utilisation de la mémoire sur les hôtes Linux. 
+
+![Memoire negative](https://www.eyesofnetwork.com/thumbs/1000x1000r/2020-03/mem-negative.png)
+
+Symptôme présent sur **EON 5.2+**.
+
+# Cause
+
+La cause la plus probable est la présence du paquet *net-snmp* en version supérieure à **5.7.2-43**.
+
+Pour en être sûr, exécutez la commande suivante : 
+
+```sh
+yum info net-snmp
+```
+
+Regardez enfin le champ *Version* et *Révision*.
+
+
+# Résolution 
+
+Ce problème est résolu avec la mise à jour **1.2** du paquet **nagios-plugins-eon**. Cette mise à jour comporte le correctif pour le plug-in *[check_snmp_mem.pl](https://github.com/EyesOfNetworkCommunity/nagios-plugins-eon/commit/2ba9ae4d526374fff0af10a458f8abca89841280 "Lien Github")*.
+
+Veuillez mettre à jour le paquet en exécutant la commande suivante : 
+
+```sh
+yum update nagios-plugins-eon
+```
+<br>
+**Résultat : **
+<br><br>
+![Memoire OK](https://www.eyesofnetwork.com/thumbs/1000x1000r/kb/mem-ok.png)

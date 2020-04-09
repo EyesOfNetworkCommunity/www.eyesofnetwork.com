@@ -1,0 +1,22 @@
+---
+layout: none
+lang: en
+ref: redirect
+---
+<script>
+  {% assign pages=site.pages | where:"ref", "index" %}
+  var lang = "en";
+  var userLang = navigator.language;
+  userLang = userLang.split("-");
+  var listLang = new Array();
+  {% for page in pages %}
+    listLang.push('{{ page.lang }}');
+  {% endfor %}
+
+  listLang.forEach(function(item) {
+    if(userLang[0] == item) {
+      lang = item;
+    }});
+  window.location = lang;
+</script>
+

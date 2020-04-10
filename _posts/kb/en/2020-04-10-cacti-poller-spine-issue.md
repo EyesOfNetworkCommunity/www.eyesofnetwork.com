@@ -11,7 +11,7 @@ permalink: /en/kb/:title
 
 ## Introduction
 
-Versions: EyesOfNetwork > 5.3
+Versions: EyesOfNetwork >= 5.3
 
 EyesOfNetwork provides Cacti usage to generate bandwidth graphs, especially for network devices.
 After adding your equipments, and check SNMP polling is OK, graphs are not generated.

@@ -37,7 +37,8 @@ When updating thruk from the "labs_consol_stable" repository, the file */etc/htt
 Deleting the file and restarting the *httpd* service.
 
 ```bash
-rm /etc/httpd/conf.d/thruk_cookie_auth_vhost.confsystemctl restart httpd
+echo "" > /etc/httpd/conf.d/thruk_cookie_auth_vhost.conf
+systemctl restart httpd
 ```
 
 ## Solution

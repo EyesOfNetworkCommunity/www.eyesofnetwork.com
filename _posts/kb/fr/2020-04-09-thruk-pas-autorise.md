@@ -37,7 +37,7 @@ Lors de la mise à jour de thruk à partir du dépôt "labs_consol_stable", le f
 Afin de contourner le problème, une suppression du fichier et le redémarrage du service *httpd* sont nécessaires
 
 ```bash
-rm /etc/httpd/conf.d/thruk_cookie_auth_vhost.conf
+echo "" > /etc/httpd/conf.d/thruk_cookie_auth_vhost.conf
 systemctl restart httpd
 ```
 

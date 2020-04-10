@@ -49,11 +49,11 @@
     });
   });
 
-  //modal for Release note
+  //modal for Release note    
   $(function () {
-    $('.popup-modal').magnificPopup({
+    $('.ajax-popup-modal').magnificPopup({
       type: 'ajax',
-      midClick: false,
+      midClick: true,
       preloader: false,
       modal: false,
       callbacks: {
@@ -65,6 +65,12 @@
         console.log(this.content);
         }
       }
+    });
+    $('.popup-modal').magnificPopup({
+      type: 'inline',
+      midClick: false,
+      preloader: false,
+      modal: false
     });
     $(document).on('click', '.popup-modal-dismiss', function (e) {
       e.preventDefault();

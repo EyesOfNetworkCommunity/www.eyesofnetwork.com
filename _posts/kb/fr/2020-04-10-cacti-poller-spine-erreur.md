@@ -11,7 +11,7 @@ permalink: /fr/kb/:title
 
 ## Présentation
 
-Versions concernées: EyesOfNetwork > 5.3
+Versions concernées: EyesOfNetwork >= 5.3
 
 EyesOfNetwork propose l'utilisation de Cacti pour générer des graphes de charges, notamment pour les équipements réseaux.
 Après avoir ajouté vos équipements, et vérifié que la récupération d'informations SNMP est OK, les graphes n'apparaissent pas.

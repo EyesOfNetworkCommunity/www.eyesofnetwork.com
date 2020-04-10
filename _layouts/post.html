@@ -14,9 +14,15 @@ layout: default
         {% if page.lang == "en" %}
           {% assign previous = "Previous" %}
         {% elsif page.lang == "fr" %}
-          {% assign previous = "Précedent" %}
+          {% assign previous = "Précédent" %}
         {% endif %}
-        <a href="/{{ page.lang }}/kb" class="text-right col-6" ><i class="fas fa-caret-left"></i> {{ previous }}</a>
+        {% if page.categories contains "kb" %}
+          {% assign type = "kb" %}
+        {% elsif page.categories contains "news" %}
+          {% assign type = "news" %}
+        {% endif %}
+
+        <a href="/{{ page.lang }}/{{ type }}" class="text-right col-6" ><i class="fas fa-caret-left"></i> {{ previous }}</a>
       </div>
     <HR>
     <div class="post-content" itemprop="articleBody">

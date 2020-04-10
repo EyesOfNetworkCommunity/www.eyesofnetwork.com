@@ -6,4 +6,5 @@ ref: post-eoi-touchscreen
 date: 2019-12-01 11:04 +0100
 categories: news
 lang: fr
+permalink: /fr/news/:title
 ---

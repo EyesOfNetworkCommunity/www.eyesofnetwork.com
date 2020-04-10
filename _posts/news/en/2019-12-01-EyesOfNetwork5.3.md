@@ -6,4 +6,5 @@ ref: post-EyesOfNetwork5.3
 date: 2019-12-01 11:06 +0100
 categories: news
 lang: en
+permalink: /en/news/:title
 ---

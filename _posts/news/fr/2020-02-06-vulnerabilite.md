@@ -6,6 +6,7 @@ ref: post-Vulnerability
 date: 2020-02-06 17:58 +0100
 categories: news
 lang: fr
+permalink: /fr/news/:title
 ---
 
 Ce mercredi 5 février, plusieurs vulnérabilités ont été détectées dans la solution EyesOfNetwork.

@@ -599,10 +599,7 @@ permalink: /fr
               <p>{{ post.desc }}</p>
               <p class="news-date">{{ post.date | date: date_format }}</p>
               {%- if content != "" -%}
-              <p class="show-more"><a class="link popup-modal" href="#{{ post.ref }}">En savoir plus <i class="fas fa-caret-right"></i></a></p>
-              <div id="{{ post.ref }}" class="mfp-hide white-popup-block">
-                {{ content }}
-              </div>
+              <p class="show-more"><a href="{{ post.url }}" class="link popup-modal">En savoir plus <i class="fas fa-caret-right"></i></a></p>
               {%- endif -%}
             </div>
             {%- endif -%}
@@ -616,10 +613,7 @@ permalink: /fr
               <p>{{ post.desc }}</p>
               <p class="news-date">{{ post.date | date: date_format }}</p>
               {%- if content != "" -%}
-              <p class="show-more"><a class="link popup-modal" href="#{{ post.ref }}">En savoir plus <i class="fas fa-caret-right"></i></a></p>
-              <div id="{{ post.ref }}" class="mfp-hide white-popup-block">
-                {{ content }}
-              </div>
+              <p class="show-more"><a href="{{ post.url }}" class="link popup-modal">En savoir plus <i class="fas fa-caret-right"></i></a></p>
               {%- endif -%}
             </div>
             {%- endif -%}

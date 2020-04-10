@@ -6,5 +6,6 @@ ref: post-Creating-issues
 date: 2019-12-01 11:05 +0100
 categories: news
 lang: en
+permalink: /en/news/:title
 ---
 https://github.com/EyesOfNetworkCommunity/eonweb/commit/859bbe73f99e06f3cdbd1f2866e82c7dd83bd6d9

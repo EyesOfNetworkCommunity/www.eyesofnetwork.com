@@ -1,0 +1,34 @@
+---
+layout: default
+lang: fr
+ref: news-post
+permalink: /fr/news
+---
+<main class="post">
+    <div class="post-list">
+        {%- if site.posts.size > 0 -%}
+            <h1>ACTUALITÉS</h1>
+            {% assign posts=site.posts | where:"lang", page.lang | where:"categories", "news" %}
+            <ul>
+                {% for post in posts %}
+                {% assign content = post.content | strip_newlines %}
+                <HR>
+                <li>
+                    <h2 class="post-title">
+                        {% if content == "" %}
+                            {{ post.title }}
+                        {% else %}
+                            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        {% endif %}
+                    </h2>
+                    <div class="post-meta">
+                        <p>{{ post.desc }}</p>
+                        {%- assign date_format = site.minima.date_format | default: "%d/%m/%Y" -%}
+                        <span class="post-date">{{ post.date | date: date_format }}</span>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        {%- endif -%}
+    </div>
+</main>

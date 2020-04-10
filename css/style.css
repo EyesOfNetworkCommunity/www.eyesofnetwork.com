@@ -1824,6 +1824,15 @@
         }
     }
 
+    .mfp-content {
+        position: relative;
+        background: #FFF;
+        padding: 20px;
+        width: auto;
+        max-width: 1000px;
+        margin: 20px auto;
+    }
+    
     .highlighted-info.info p.news-date {
         position: absolute;
         bottom: 0px;
@@ -2026,16 +2035,6 @@
     .post a:hover {
         color: #ffffff;
     }
-    .post-title a {
-        text-transform: uppercase;
-        display: block;
-        letter-spacing: 0.3em;
-        font-size: 0.7em;
-        font-weight: 300;
-        background: transparent;
-        padding: 0.3rem 1rem;
-        margin: 1rem 0 6 0;
-      }
 
     .post-title a:hover {
         color: #ffffff;
@@ -2076,8 +2075,6 @@
         margin-right: auto;
     }
 
-   
-
     .post pre {
         margin-bottom: 1rem;
         color: white;
@@ -2085,7 +2082,6 @@
     
 
     .post img {
-            
         max-width: 100%;
     }
 
@@ -2093,8 +2089,25 @@
         overflow: auto;
         color: black;
     }
+
     .post .language-mermaid svg {
         background: rgba(236, 236, 255, .50);
+    }
+
+    .post table {
+        color: #ebebeb;
+    }
+    
+    .post-list h2.post-title {
+        text-transform: uppercase;
+        display: block;
+        letter-spacing: 0.3em;
+        font-size: 1.4em;
+        font-weight: 300;
+        background: transparent;
+        padding: 0.3rem 1rem;
+        color: #34aadc;
+
     }
 
     @media (max-width: 767px) {
@@ -2104,7 +2117,5 @@
 
         .post ul, .post-meta {
             padding-left: 0;
-        }
-
-       
+        }       
     }

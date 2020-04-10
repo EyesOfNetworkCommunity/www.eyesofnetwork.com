@@ -6,4 +6,5 @@ ref: post-eyes-ansible-roles
 date: 2019-12-01 09:31 +0100
 categories: news
 lang: en
+permalink: /en/news/:title
 ---

@@ -52,10 +52,19 @@
   //modal for Release note
   $(function () {
     $('.popup-modal').magnificPopup({
-      type: 'inline',
+      type: 'ajax',
       midClick: false,
       preloader: false,
-      modal: false
+      modal: false,
+      callbacks: {
+      parseAjax: function(mfpResponse) {
+        mfpResponse.data = $(mfpResponse.data).find('.post-content');
+        console.log('Ajax content loaded:', mfpResponse);
+      },
+      ajaxContentAdded: function() {
+        console.log(this.content);
+        }
+      }
     });
     $(document).on('click', '.popup-modal-dismiss', function (e) {
       e.preventDefault();

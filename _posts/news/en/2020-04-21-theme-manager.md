@@ -28,13 +28,13 @@ The **5.3-5** version of eonweb also brings 2 new themes
 
 ![EONFlatLight Services](/img/news/2020-04-21-theme-manager/EONFlatLight-services.png)
 ![EONFlatLight Service](/img/news/2020-04-21-theme-manager/EONFlatLight-service.png)
-![EONFlatLight Lilac](/img/news/2020-04-21-theme-manager/EONFlatLight-lilac.png)
+![EONFlatLight Lilac](/img/news/2020-04-21-theme-manager/EONFlatLight-Lilac.png)
 
 ### EONFlatDark
 
 ![EONFlatDark Services](/img/news/2020-04-21-theme-manager/EONFlatDark-services.png)
 ![EONFlatDark Service](/img/news/2020-04-21-theme-manager/EONFlatDark-service.png)
-![EONFlatDark Lilac](/img/news/2020-04-21-theme-manager/EONFlatDark-lilac.png)
+![EONFlatDark Lilac](/img/news/2020-04-21-theme-manager/EONFlatDark-Lilac.png)
 
 ## Developer documentation
 

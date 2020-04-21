@@ -28,14 +28,14 @@ La version **5.3-5** d'eonweb apporte également 2 nouveaux thèmes:
 
 ![EONFlatLight vue Services](/img/news/2020-04-21-theme-manager/EONFlatLight-services.png)
 ![EONFlatLight vue Service](/img/news/2020-04-21-theme-manager/EONFlatLight-service.png)
-![EONFlatLight vue Lilac](/img/news/2020-04-21-theme-manager/EONFlatLight-lilac.png)
+![EONFlatLight vue Lilac](/img/news/2020-04-21-theme-manager/EONFlatLight-Lilac.png)
 
 ### EONFlatDark
 
 ![EONFlatDark vue Services](/img/news/2020-04-21-theme-manager/EONFlatDark-services.png)
 ![EONFlatDark vue Service](/img/news/2020-04-21-theme-manager/EONFlatDark-service.png)
-![EONFlatDark vue Lilac](/img/news/2020-04-21-theme-manager/EONFlatDark-lilac.png)
+![EONFlatDark vue Lilac](/img/news/2020-04-21-theme-manager/EONFlatDark-Lilac.png)
 
 ## Documentation développeur
 
-Retrouvez la documentation développeur à l'adresse suivante: [Documentation du gestionnaire de thème](https://github.com/EyesOfNetworkCommunity/eonweb/tree/master/themes)
+Retrouvez la documentation développeur à l'adresse suivante: [Documentation du gestionnaire de thèmes](https://github.com/EyesOfNetworkCommunity/eonweb/tree/master/themes)

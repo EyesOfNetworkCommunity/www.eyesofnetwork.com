@@ -2069,6 +2069,10 @@
         padding: 25px;
     }
 
+    .post-content img{
+        width: 100%;
+    }
+
     .post-header {
         width: 80%;
         margin-left: auto;

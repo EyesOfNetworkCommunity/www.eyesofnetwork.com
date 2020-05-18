@@ -1,0 +1,14 @@
+---
+layout: default
+lang: en
+ref: docs
+permalink: /en/docs
+---
+{% assign posts=site.posts | where:"lang", page.lang | where:"categories", "docs" %}
+<script>
+  {% for post in posts %}
+      {% if forloop.first %}
+        window.location = "{{ post.url }}";
+      {% endif %}
+  {% endfor %}
+</script>

@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<div id="docs">
+  <nav id="docs-nav" class="scrollbar-design sidepanel">
+      <h1>Documentation</h1>
+      <ul id="links">
+        <div>
+        {% assign posts=site.posts | where:"lang", page.lang | where:"categories", "docs" %}
+        <label>Version : </label>
+        <select name="version" id="version-select"> 
+        {% for post in posts %}
+          {% if post.url == page.url %}
+            {% if forloop.first %}
+              <option selected value="{{ post.url }}">{{ post.title }} (latest)</option>
+            {% else %}
+              <option selected value="{{ post.url }}">{{ post.title }}</option>
+            {% endif %}
+          {% else %}
+            {% if forloop.first %}
+              <option value="{{ post.url }}">{{ post.title }} (latest)</option>
+            {% else %}
+              <option value="{{ post.url }}">{{ post.title }}</option>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        </select>
+      </div>
+        <input id="search-filter" type="text" placeholder="Search...">
+        <div id="toc"></div>
+      </ul>
+    </nav>  
+  <div id="docs-content">
+    <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+      {{ content }}
+    </article>
+  </div>
+<button id="toggle-navdoc-btn" class="openbtn" onclick="toggleNav()">☰</button>  
+</div>
+
+<script>
+  function toggleNav() {
+    if(document.getElementById("docs-nav").style.display != "inline") {
+      document.getElementById("docs-nav").style.display = "inline";
+    } else {
+      document.getElementById("docs-nav").style.display = "";
+      document.getElementById("open-navdoc-btn").style.display = "";
+    }
+  }
+</script>

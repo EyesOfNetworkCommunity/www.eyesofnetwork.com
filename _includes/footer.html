@@ -16,7 +16,8 @@
 <script src="/lib/venobox/venobox.min.js?7712660b0d"></script>
 <script src="/lib/owlcarousel/owl.carousel.min.js?2e5d5fcfd1"></script>
 <script src="/lib/magnific-popup/jquery.magnific-popup.min.js?358235b3c2"></script>
-{%- if page.layout == "post" -%}
+{%- if page.layout == "post" or page.layout == "docs"-%}
+  <script src="/lib/toc/toc.js"></script>
   <script src="/lib/mermaid/mermaid.min.js"></script>
   <script src="/lib/highlightjs/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
@@ -30,7 +31,33 @@
   };
   mermaid.initialize(config);
   //window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+  $(document).ready(function() {
+      $('#toc').toc();
+  });
   mermaid.init(undefined, $(".language-mermaid"));
+  $(document).ready(function(){
+  $("#search-filter").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#toc *").filter(function() {
+      if($(this).text().toLowerCase().indexOf(value) > -1) {
+        $(this).show();
+        if(value == ""){
+        $(this).css("display", "");
+       }
+      }
+      else {
+        $(this).hide();
+      }      
+    });
+  });
+});
+
+$(document).ready(function(){
+  $("#version-select").on("change", function() {
+    value = $("#version-select").val();
+    window.location.href = value;
+  });
+});
   </script>
 {%- endif -%}
 <!-- Contact Form JavaScript File -->
@@ -77,4 +104,4 @@
       $.magnificPopup.close();
     });
   });
-</script>
+  </script>

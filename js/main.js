@@ -145,3 +145,14 @@ jQuery(document).ready(function( $ ) {
 // custom code
 
 });
+
+function CopyToClipboard(text) {
+  var copyText = document.createElement("input");
+  copyText.style = "position: absolute; left: -1000px; top: -1000px";
+  copyText.value = text;
+  document.body.appendChild(copyText);
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(copyText);
+}

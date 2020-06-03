@@ -12,7 +12,7 @@ permalink: /fr/news/:title
 ## Présentation
 
 
-Le suivi des incidents est une tache cruciale pour tout gestionnaire de systèmes d'information, retrouvez l'historique des évènements et vos actions correctives vous permet de gagner du temps dans vos actes d'administration. 
+Le suivi des incidents est une tache cruciale pour tout gestionnaire de systèmes d'information, retrouvez l'historique des évènements et vos actions correctives vous permettront de gagner du temps dans vos actes d'administration. 
 
 
 Avec le module ITSM (*Beta*) intégré dans *eonweb* à partir de la version **5.3-4**, connectez EyesOfNetwork à votre outil de suivi d'incident au travers des APIs.

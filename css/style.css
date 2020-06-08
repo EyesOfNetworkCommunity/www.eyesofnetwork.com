@@ -1108,6 +1108,8 @@
 
     #footer ul {
         list-style-type: none;
+        padding-left: 0;
+        word-break: break-all;
     }
 
     #footer li {
@@ -1136,13 +1138,19 @@
     #footer #infos {
         text-align: right;
     }
-    
+
     #footer li:first-child {
         margin-bottom: 10px;
         margin-top: 10px;
         font-size: 20px;
         text-transform: uppercase;
       }
+
+      @media (max-width: 767px) {
+        #footer #infos {
+             text-align: unset;
+        }
+    }
     /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
@@ -2326,6 +2334,7 @@
 #docs-content .post {
     padding: 30px;
     overflow-wrap: break-word;
+    min-height: 100vh;
 }
 
 #docs #copy-button {

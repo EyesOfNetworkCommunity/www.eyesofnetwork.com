@@ -12,7 +12,7 @@
           </li>
           {% endfor %}
           <li class="nav-lang">
-            Language
+            {{ site.lang.language[page.lang] }}
             <ul class="menu submenu vertical" style="display: none;">
               {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
               {% for post in posts %} <li><a href="{{ post.url | prepend: site.baseurl }}"

@@ -1,4 +1,48 @@
 <footer id="footer">
+  <div class="row" id="links">
+    <div class="col-4 row">
+      
+      <div>
+        <ul>
+          <li>
+            <b>Ressources</b>
+          </li>
+          <li>
+            <a href="/{{ page.lang }}/docs">Documentation</a>
+          </li>
+          <li>
+            <a href="/{{ page.lang }}/kb">{{ site.kb[page.lang] }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-4 row">
+      
+      <div>
+        <ul>
+          <li>
+            <b>Contact</b>
+          </li>
+          <li>
+            <a class="_blank" href="mailto:eyesofnetwork@eyesofnetwork.com" target="_blank">eyesofnetwork@eyesofnetwork.com</a>
+          </li>
+          <li>
+            <b>{{ site.follow[page.lang] }}&nbsp;&nbsp;&nbsp;&nbsp;</b><a href="https://twitter.com/eyesofnetwork"><i class="fab fa-twitter"></i></a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-4" id="infos">
+      <div>
+        <img src="/img/logos/logo-eyes_NB.svg">
+        
+      </div>
+    </div>
+
+    
+  </div>
+  <div id="by">{{ site.by[page.lang] }} <a href="https://www.axians.com/">axians</a></div>
+  
 </footer>
 <!-- #footer -->
 

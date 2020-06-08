@@ -1097,6 +1097,30 @@
         color: #eee;
         font-size: 14px;
     }
+
+    #footer #by {
+        text-align: center;
+    }
+
+    #footer a:hover .fab.fa-twitter:before {
+        color: #00acee;
+    }
+
+    #footer #follow {
+        font-size: 24px;
+        padding-top: 50px;
+    }
+
+    #footer #infos {
+        text-align: right;
+    }
+    #footer li:first-child {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+
     /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/

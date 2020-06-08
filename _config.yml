@@ -16,6 +16,15 @@ title:
 description:
   en: Information system supervision solution.
   fr: Solution de supervision du système d'information.
+by:
+  en: Open source products sponsored by
+  fr: Gamme open source sponsorisé par
+follow:
+  en: Follow us
+  fr: Suivez nous
+kb:
+  en: Knowledge Bases
+  fr: Base de connaissances
 url: "" # the base hostname & protocol for your site
 
 ###########################

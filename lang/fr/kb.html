@@ -7,7 +7,7 @@ permalink: /fr/kb
 <main class="post">
     <div class="post-list">
         {%- if site.posts.size > 0 -%}
-        <h1>Knowledge Bases</h1>
+        <h1>Base de connaissances</h1>
         {% assign posts=site.posts | where:"lang", page.lang | where:"categories", "kb" %}
         <ul>
             {% for post in posts %}

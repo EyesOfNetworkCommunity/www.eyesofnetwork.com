@@ -32,7 +32,14 @@ chown apache:root /etc/openldap/certs/ROOT-CA.pem
 chmod 0400 /etc/openldap/certs/ROOT-CA.pem
 ```
 
-3. Restarting httpd
+3. Adding certificat in trust store
+
+``` bash
+cp /etc/openldap/certs/ROOT-CA.pem /etc/pki/ca-trust/source/anchors/
+update-ca-trust extract
+```
+
+4. Restarting httpd
 
 ``` bash
     systemctl restart httpd

@@ -32,6 +32,13 @@ chown apache:root /etc/openldap/certs/ROOT-CA.pem
 chmod 0400 /etc/openldap/certs/ROOT-CA.pem
 ```
 
+3. Rajouter le certificat ROOT dans le magasin de certificats de confiance
+
+``` bash
+cp /etc/openldap/certs/ROOT-CA.pem /etc/pki/ca-trust/source/anchors/
+update-ca-trust extract
+```
+
 3. Redémarrer le serveur httpd
 
 ``` bash

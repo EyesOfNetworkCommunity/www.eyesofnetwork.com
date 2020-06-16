@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Impossible d'appliquer la configuration après la mise à jour de Nagios"
-desc: "EyesOfNetwork depuis sa version 5.2 possède des sous composants qui sont mis à jour à partir de dépôts communautaires Tiers afin d'accélérer et rendre plus accessible les mises à jour. Mais cela engendre peut engendrer des modifications impactant négativement EyesOfNetwork."
+desc: "EyesOfNetwork depuis sa version 5.2 possède des sous-composants qui sont mis à jour à partir de dépôts communautaires Tiers. Afin d'accélérer et rendre plus accessible les mises à jour. 
+Mais cela peut engendrer des modifications qui impactent négativement EyesOfNetwork."
 ref: nagios-update-apply-fail
 categories: [kb, Security, EyesOfNetwork, "5.3"]
 lang: fr
@@ -10,7 +11,7 @@ permalink: /fr/kb/:title
 
 ## Présentation
 
-EyesOfNetwork depuis sa version 5.2 possède des sous composants qui sont mis à jour à partir de dépôts communautaires Tiers afin d'accélérer et rendre plus accessible les mises à jour. Mais cela engendre peut engendrer des modifications impactant négativement EyesOfNetwork.
+EyesOfNetwork depuis sa version 5.2 possède des sous-composants qui sont mis à jour à partir de dépôts communautaires Tiers. Afin d'accélérer et rendre plus accessible les mises à jour. Mais cela peut engendrer des modifications qui impactent négativement EyesOfNetwork.
 
 C'est le cas du passage de la version de Nagios 4.4.3 en 4.4.5 provenant du dépôt **EPEL**.
 

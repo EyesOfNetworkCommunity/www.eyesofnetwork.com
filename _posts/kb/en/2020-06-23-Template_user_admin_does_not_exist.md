@@ -5,7 +5,7 @@ desc: "Error shown when openning cacti."
 ref: cacti-erreur-user-admin
 categories: [kb, cacti, EyesOfNetwork, "5.2"]
 lang: en
-permalink: /fr/kb/:title
+permalink: /en/kb/:title
 ---
 
 ## Presentation

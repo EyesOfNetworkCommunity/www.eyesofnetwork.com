@@ -26,6 +26,4 @@ chown nagios:eyesofnetwork /srv/eyesofnetwork/nagios/etc/objects/
 
 ## Correction
 
-En attente d'un correctif
-
-(_MAJ du 16/06_: Construction du correctif **eonconf** en cours)
+Corrigé en **eonconf-5.3-3**

@@ -25,6 +25,4 @@ chown nagios:eyesofnetwork /srv/eyesofnetwork/nagios/etc/objects/
 
 ## Fix
 
-Waiting for a fix
-
-(_MAJ du 16/06_: Building fix **eonconf**)
+Fixed in **eonconf-5.3-3**

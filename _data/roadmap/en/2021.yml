@@ -1,0 +1,22 @@
+- title: EON 6.0
+  description: -&nbsp;CentOS 8<br>
+    -&nbsp;ITSM module v2<br>
+    -&nbsp;Nouveau visuel<br>
+    -&nbsp;Amélioration des performances<br>
+    -&nbsp;Mise à jour majeure de eonapi
+
+- title: EOA 3.0
+  description: -&nbsp;Containerisation de la solution
+
+- title: EOR 3.0
+  description: -&nbsp;Remplacement de la BDD par Elasticsearch<br>
+    -&nbsp;Mise à jour majeur eorweb
+
+- title: EOI 2.1
+  description: -&nbsp;Interface web d'administration<br>
+    -&nbsp;Modèles par métier
+
+
+- title: EOI 2.1
+  description: -&nbsp;Interface web d'administration<br>
+    -&nbsp;Modèles par métier

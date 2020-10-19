@@ -30,6 +30,7 @@ Pour executer le script, il faut évidemment disposer des droits d'execution pui
 Pour ce faire, il suffit d'executer les lignes de commande suivantes :
 
 chmod +x cve-2020-10713--2020-08-01-1153.sh
+
 ./cve-2020-10713--2020-08-01-1153.sh
 
 En temps normal, si votre machine est touchée vous devriez avoir le message suivant :

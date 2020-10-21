@@ -10,13 +10,12 @@
 
 - title: EOR 3.0
   description: -&nbsp;Remplacement de la BDD par Elasticsearch<br>
+    -&nbsp;Refonte complète de la solution<br>
     -&nbsp;Mise à jour majeur eorweb
 
 - title: EOI 2.1
   description: -&nbsp;Interface web d'administration<br>
     -&nbsp;Modèles par métier
 
-
-- title: EOI 2.1
-  description: -&nbsp;Interface web d'administration<br>
-    -&nbsp;Modèles par métier
+- title: Eyes 3
+  description: -&nbsp;Création d'un média d'installation unifié

@@ -1,0 +1,20 @@
+- title: EON 6.0
+  description: -&nbsp;CentOS 8<br>
+    -&nbsp;ITSM module v2<br>
+    -&nbsp;New visual<br>
+    -&nbsp;Perf Enhancement<br>
+    -&nbsp;EONAPI update
+
+- title: EOA 3.0
+  description: -&nbsp; creation of Docker image
+
+- title: EOR 3.0
+  description: -&nbsp;Replace DB by Elasticsearch<br>
+    -&nbsp;eorweb update
+
+- title: EOI 2.1
+  description: -&nbsp;Administration WebInterface<br>
+    -&nbsp;Templates by activities
+
+- title: Eyes 3
+  description: -&nbsp;Creation os Full ISO image for all components

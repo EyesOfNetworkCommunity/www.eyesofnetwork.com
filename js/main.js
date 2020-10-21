@@ -143,6 +143,7 @@ jQuery(document).ready(function( $ ) {
   })
 
 // custom code
+big = 0;
 
 });
 
@@ -156,3 +157,40 @@ function CopyToClipboard(text) {
   document.execCommand("copy");
   document.body.removeChild(copyText);
 }
+
+ function resize() { 
+  heightOutput = window.innerHeight;
+  widthOutput = window.innerWidth;
+  roadmap = document.querySelectorAll("#roadmap-text tr");
+  trans = 8;
+  transth = -3;
+   if(widthOutput >= 1024 && big == 0) {
+    big = 1;
+    roadmap.forEach((elements, index) => {
+      rot = -25;
+      cells = elements.cells;
+      angle = (-130 / (cells.length-2));
+      Array.from(cells).forEach(element => {
+        jelement = $(element);
+        if(!jelement.is("th")){
+          element.style.transform = "rotate(" + rot + "deg) translate(" + trans + "em) rotate(" + -rot +"deg)";
+          rot = rot + angle;
+        } else {
+          element.style.transform = "translate(" + transth + "em)";
+          transth += -5; 
+        }
+      });
+      trans += 11; 
+    });
+  } else if(widthOutput < 1024 && big == 1){
+    big = 0;
+    roadmap.forEach((elements, index) => {
+      cells = elements.cells;
+      Array.from(cells).forEach(element => {
+        element.removeAttribute("style");
+      });
+    });
+  }
+} 
+window.onload = resize;
+window.onresize = resize;

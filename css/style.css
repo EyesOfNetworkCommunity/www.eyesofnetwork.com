@@ -2407,3 +2407,126 @@
         text-align: unset;
     }
 }
+
+/*--------------------------------------------------------------
+# Roadmap
+--------------------------------------------------------------*/
+
+#roadmap h2 {
+    color: white;
+}
+
+#roadmap{
+    position: relative;
+    height: 660px;
+    background-image: url(/img/roadmap/galaxy.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#roadmap::before {
+    content: "";
+    background: rgba(6, 12, 34, 0.4);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.degrad {
+    width: 8px;
+    height: 8px; 
+    box-shadow: 0 0 0 55px rgba(162, 0, 103, .7), 0 0 0 280px rgba(0, 95, 184, .7), 0 0 0 530px rgba(162, 0, 103, .7);
+    border-radius: 50px;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    clip: rect(-992px, 1000px, 0px, -1000px);
+}
+
+#logo-roadmap {
+    position: absolute;
+    bottom: 5px;
+    left: calc(50% - 35px);
+    width: 80px;
+}
+
+#roadmap-text tr > td {
+    color: white;
+    position: absolute;
+    left: calc(50% - 30px);
+    font-size: 22px;
+    font-weight: bolder;
+    top: 615px;
+    max-width: 170px;
+}
+
+#roadmap-text th {
+    bottom: 0;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    left: calc(50% - 54px);
+    font-weight: bolder;
+    line-height: 1em;
+}
+
+@media (max-width: 1024px) {
+    #roadmap{
+        height: unset;
+        padding-bottom: 50px;
+    }
+
+    #roadmap-text tr > td, #roadmap-text th {
+        position: relative;
+        top: unset;
+        left: unset;
+        text-align: center;
+        border: solid 1px black;
+    }
+
+    #roadmap-text tr > td {
+        background-color: rgba(162, 0, 103);
+        min-width: 510px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    #roadmap-text tr {
+        display: grid;
+    }
+
+    #roadmap table {
+        margin: auto;
+    }
+
+    #roadmap-text th {
+        background-color:rgba(0, 95, 184);
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .degrad {
+        display: none;
+    }
+
+    #roadmap #link-roadmap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+    }
+
+    #logo-roadmap {
+        display: none;
+    }
+}
+
+@media (max-width: 574px) {
+    #roadmap-text tr > td {
+        min-width: 355px;
+    }
+}

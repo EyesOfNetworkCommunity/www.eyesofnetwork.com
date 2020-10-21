@@ -75,6 +75,14 @@ nav-menu:
     class: ""
     url: "#community"
 
+  roadmap:
+    en:
+      name: "Roadmap"
+    fr:
+      name: "Roadmap"
+    class: ""
+    url: "#roadmap"
+
   download:
     en:
       name: "Download"

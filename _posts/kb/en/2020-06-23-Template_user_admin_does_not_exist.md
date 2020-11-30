@@ -24,7 +24,8 @@ INSERT INTO user_auth VALUES (1,'admin','21232f297a57a5a743894a0e4a801fc3',0,'Ad
 To execute the command, you need to have SSH or terminal access to the EON server and then access the database as follows;
 
 ``` bash
-$ mysql -u root -p root66
+$ mysql -u root -p
+# password: root66
 $ use cacti
 $ INSERT INTO user_auth VALUES (1,'admin','21232f297a57a5a743894a0e4a801fc3',0,'Administrator','on','on','on','on','on',1,1,1,1,1,'on');
 ```

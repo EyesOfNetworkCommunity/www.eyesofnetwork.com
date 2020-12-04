@@ -10,7 +10,7 @@ permalink: /fr/kb/:title
 
 ## Présentation
 
-A ce jour nous n’avons pas clairement identifier la source néanmoins nous avons constaté que le problème se présente lorsque nous avons un Business Process de configuré ce qui renforce l’hypothèse d’instabilité causée par l’interaction Livestatus <-> Nagios
+A ce jour nous n’avons pas clairement identifié la source néanmoins nous avons constaté que le problème se présente lorsque nous avons un Business Process de configuré ce qui renforce l’hypothèse d’instabilité causée par l’interaction Livestatus <-> Nagios
 
 - install EON 5.3 + custo AMS => NOK
 - fresh install EON 5.3 => NOK
@@ -44,4 +44,23 @@ Nous avons également remarqué ce message au démarrage de Nagios :
 ```
 WARNING: RLIMIT_NPROC is 7259, total max estimated processes is 11374! You should increase your limits (ulimit -u, or limits.conf)
 ```
-Nous avons bien tenté de modifié la valeur mais le changement ne semble pas être pris en compte.
+Nous avons bien tenté de modifier la valeur mais le changement ne semble pas être pris en compte.
+
+## Solution de contournement 
+
+Pour contourner le problème, il est conseillé pour le moment d'activer un redémarrage automatiquement de Nagios, pour ce faire :
+
+Il faut modifier le fichier qui permet d'activer un autorestart de nagios :
+```
+vi /etc/systemd/system/multi-user.target.wants/nagios.service
+```
+
+Puis ajouter la ligne de commande suivante au fichier :
+```
+Restart=always
+```
+
+Et enfin relancer le service :
+```
+systemctl daemon-reload
+```

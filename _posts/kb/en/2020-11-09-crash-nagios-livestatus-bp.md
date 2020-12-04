@@ -45,3 +45,23 @@ We also noticed this message when starting Nagios :
 WARNING: RLIMIT_NPROC is 7259, total max estimated processes is 11374! You should increase your limits (ulimit -u, or limits.conf)
 ```
 We have tried to modify the value but the change does not seem to be taken into account.
+
+
+## Workaround
+
+To workaround this problem, we recommend to active an automated restart of Nagios , to do so :
+
+You need to modify the file that bring the automated restart of nagios feature :
+```
+vi /etc/systemd/system/multi-user.target.wants/nagios.service
+```
+
+Then you will need to add the following line :
+```
+Restart=always
+```
+
+And then restart the service :
+```
+systemctl daemon-reload
+```

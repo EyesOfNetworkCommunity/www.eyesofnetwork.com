@@ -2098,6 +2098,12 @@
         background: transparent;
     }
 
+    .post, #security hr{
+        background: #252727;
+        margin-top: 7px;
+        margin-bottom:7px;
+    }
+
     .post hr {
         background: #A20067;
         margin-top: 20px;
@@ -2158,6 +2164,12 @@
         color: #ebebeb;
     }
     
+    .post-list, #security h2.post-title{
+        padding:0;
+        letter-spacing: 0;;
+        font-size: 1em;
+        margin-bottom: 0;
+    }
     .post-list h2.post-title {
         text-transform: uppercase;
         display: block;

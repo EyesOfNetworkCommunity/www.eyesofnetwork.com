@@ -20,10 +20,7 @@ layout: default
           {% assign type = "kb" %}  
         {% elsif page.categories contains "news" %}
           {% assign type = "news" %}
-        {% elsif page.categories contains "security" %}
-          {% assign type = "security" %}
         {% endif %}
-
         <a href="/{{ page.lang }}/{{ type }}" class="text-right col-6" ><i class="fas fa-caret-left"></i> {{ previous }}</a>
       </div>
     <HR>

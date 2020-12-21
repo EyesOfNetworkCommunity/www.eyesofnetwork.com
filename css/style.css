@@ -2098,11 +2098,96 @@
         background: transparent;
     }
 
-    .post, #security hr{
-        background: #252727;
-        margin-top: 7px;
-        margin-bottom:7px;
+    .security table {
+        border-collapse: collapse;
     }
+
+    #security th, td {
+        border-bottom: 1px solid #A20067;
+    }
+
+    #security .post-meta{
+        padding-bottom:0;
+        padding-top: 20px;
+    }
+
+    #security .post-title{
+        padding:10px;
+    }
+
+    #security .post-subtitle{
+        padding-left: 30px;
+    }
+
+    #security .container {
+        margin-bottom: 1rem;
+        width: 100px;
+        text-align: center;
+    }
+
+    #security .progress {
+        padding: 6px;
+        background: rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    }
+      
+    #security .progress-bar {	
+        height: 5px;
+        background-color: #ee303c;  
+        border-radius: 4px; 
+        transition: 0.4s linear;  
+        transition-property: width, background-color;    
+    }
+      
+    #security .progress-striped-med .progress-bar-med { 	
+        background-color: #FCBC51; 
+        width: 50%; 
+        background-image: linear-gradient(
+              45deg, rgb(252,163,17) 25%, 
+              transparent 25%, transparent 50%, 
+              rgb(252,163,17) 50%, rgb(252,163,17) 75%,
+              transparent 75%, transparent); 
+        animation: progressAnimationStrike-med 3s;
+    }
+
+    #security .progress-striped-low .progress-bar-low { 	
+        background-color: #2ae43a; 
+        width: 25%; 
+        background-image: linear-gradient(
+              45deg, rgb(10, 192, 10) 25%, 
+              transparent 25%, transparent 50%, 
+              rgb(10, 192, 10) 50%, rgb(10, 192, 10) 75%,
+              transparent 75%, transparent); 
+        animation: progressAnimationStrike-low 3s;
+    }
+
+    #security .progress-striped-cri .progress-bar-cri { 	
+        background-color: #e43333; 
+        width: 100%; 
+        background-image: linear-gradient(
+              45deg, rgb(179, 11, 17) 25%, 
+              transparent 25%, transparent 50%, 
+              rgb(179, 11, 17) 50%, rgb(179, 11, 17) 75%,
+              transparent 75%, transparent); 
+        animation: progressAnimationStrike-cri 3s;
+    }
+      
+    @keyframes progressAnimationStrike-cri {
+           from { width: 0 }
+           to   { width: 100% }
+    }
+
+    @keyframes progressAnimationStrike-med {
+        from { width: 0 }
+        to   { width: 50% }
+    }
+
+    @keyframes progressAnimationStrike-low {
+    from { width: 0 }
+    to   { width: 25% }
+    }
+      
 
     .post hr {
         background: #A20067;

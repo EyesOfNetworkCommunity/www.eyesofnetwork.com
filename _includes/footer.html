@@ -13,6 +13,15 @@
           <li>
             <a href="/{{ page.lang }}/kb">{{ site.kb[page.lang] }}</a>
           </li>
+          <li>
+            <a href="/{{ page.lang }}/security">
+              {% if page.lang == "en" %}
+                Security
+              {% else %}
+                Sécurité
+              {% endif %}
+            </a>
+          </li>
         </ul>
       </div>
     </div>

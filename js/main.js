@@ -13,6 +13,17 @@ jQuery(document).ready(function( $ ) {
     return false;
   });
 
+  $(window).scroll(function(e){ 
+    var $el = $('#docs-nav'); 
+    var isPositionAbsolute = ($el.css('position') == 'absolute');
+    if ($(this).scrollTop() > 7183 && !isPositionAbsolute){ 
+      $el.css({'position': 'absolute', 'bottom': '300px'}); 
+    }
+    if ($(this).scrollTop() < 7185 && isPositionAbsolute){
+      $el.css({'position': 'fixed', 'bottom': '10px'}); 
+    } 
+  });
+
   // Header fixed on scroll
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {

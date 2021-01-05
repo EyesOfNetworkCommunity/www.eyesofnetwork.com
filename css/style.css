@@ -2116,7 +2116,7 @@
     }
 
     #security .post-subtitle{
-        padding-left: 30px;
+        padding-left: 2%;
     }
 
     #security .container {
@@ -2200,7 +2200,7 @@
     }
 
     .post-meta {
-        padding-left: 30px;
+        padding-left: 2%;
         color: white;
     }
 
@@ -2248,6 +2248,10 @@
     .post table {
         color: #ebebeb;
     }
+
+    #security{
+        width: 95%;
+    }
     
     .post-list, #security h2.post-title{
         padding:0;
@@ -2266,10 +2270,20 @@
         color: #34aadc;
     }
 
+    @media (max-width: 862px) {
+        #security-body{
+            width: 844px;
+        }
+    }
+
     @media (max-width: 767px) {
+        #security .post-meta{
+            padding: 2%;
+        }
         .post h1, .post h2 {
             text-align: center;
         }
+        
 
         .post ul, .post-meta {
             padding-left: 0;

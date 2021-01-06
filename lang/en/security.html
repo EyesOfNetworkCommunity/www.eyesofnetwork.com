@@ -21,19 +21,20 @@ permalink: /en/security
             {% for post in posts %}
                 <tr>
                     
-                    <td class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></td>
-                    <td class="post-meta">
+                    <td class="post-title" data-label="Title">
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a></td>
+                    <td class="post-meta" data-label="Description">
                         <p>{{ post.desc }}</p>
                         {%- assign date_format = site.minima.date_format | default: "%d/%m/%Y" -%}
                         <span class="post-date">{{ post.date | date: date_format }}</span>
                     </td>
-                    <td class="post-meta">
+                    <td class="post-meta" data-label="Localization">
                         <p>{{ post.localisation }}</p>
                     </td>
-                    <td class="post-meta">
+                    <td class="post-meta" data-label="Parameter">
                         <p>{{ post.parametre }}</p>
                     </td>
-                    <td class="post-meta">
+                    <td class="post-meta" data-label="Level">
                         {% if post.niveau == "Critical" %}
                         <div class="container">
                             <div class="progress progress-striped-cri">

@@ -17,10 +17,10 @@ jQuery(document).ready(function( $ ) {
   //   var $el = $('#docs-nav'); 
   //   var isPositionAbsolute = ($el.css('position') == 'absolute');
   //   if ($(this).scrollTop() > 7183 && !isPositionAbsolute){ 
-  //     $el.css({'position': 'absolute', 'bottom': '300px'}); 
+  //     $el.css({'position': 'absolute', 'top': '7000px'}); 
   //   }
   //   if ($(this).scrollTop() < 7185 && isPositionAbsolute){
-  //     $el.css({'position': 'fixed', 'bottom': '10px'}); 
+  //     $el.css({'position': 'fixed', 'top': '10px'}); 
   //   } 
   // });
 

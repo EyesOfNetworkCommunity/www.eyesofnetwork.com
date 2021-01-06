@@ -2272,8 +2272,27 @@
     }
 
     @media (max-width: 862px) {
-        #security-body{
-            width: 844px;
+        #security #post-sub{
+            display: none;
+        }
+
+        #security tr{
+            display: block;
+            margin-bottom: 60px;
+        }
+
+        #security .container{
+            margin-right: 0;
+        }
+
+        #security td{
+            display: block;
+            text-align: right;
+        }
+
+        #security td:before{
+            content: attr(data-label);
+            float: left;
         }
     }
 

@@ -17,11 +17,10 @@ layout: default
           {% assign previous = "Précédent" %}
         {% endif %}
         {% if page.categories contains "kb" %}
-          {% assign type = "kb" %}
+          {% assign type = "kb" %}  
         {% elsif page.categories contains "news" %}
           {% assign type = "news" %}
         {% endif %}
-
         <a href="/{{ page.lang }}/{{ type }}" class="text-right col-6" ><i class="fas fa-caret-left"></i> {{ previous }}</a>
       </div>
     <HR>

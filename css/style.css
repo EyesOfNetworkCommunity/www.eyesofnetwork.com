@@ -2710,15 +2710,15 @@
   }
 
   .banner-text b {
-      color : rgba(170, 170, 250, 1);
+      color : rgba(0, 95, 184, 1);
   }
 
   .banner-text b span {
-    color: #A20067;;
+    color: #A20067;
   }
 
   .banner-text a {
       width : 100vw;
       text-align: center;
-      color : rgba(170, 170, 250, 1);
+      color : rgba(0, 95, 184, 1);
   }

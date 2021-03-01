@@ -2102,7 +2102,7 @@
         border-collapse: collapse;
     }
 
-    #security th, td {
+    #security th, #security td {
         border-bottom: 1px solid #A20067;
     }
 

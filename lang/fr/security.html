@@ -11,56 +11,59 @@ permalink: /fr/security
         {% assign posts=site.posts | where:"lang", page.lang | where:"categories", "security" %}
         <ul>
             <table>
-                <tr id="post-sub">
-                    <th class="post-subtitle"> Titre </th>
-                    <th class="post-subtitle"> Description </th>
-                    <th class="post-subtitle"> Localisation </th>
-                    <th class="post-subtitle"> Paramètre </th>
-                    <th class="post-subtitle"> Niveau </th>
-                </tr>
-            {% for post in posts %}
-                <tr>
-                    
-                    <td class="post-title" data-label="Titre">
-                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a></td>
-                    <td class="post-meta" data-label="Description">
-                        <p>{{ post.desc }}</p>
-                        {%- assign date_format = site.minima.date_format | default: "%d/%m/%Y" -%}
-                        <span class="post-date">{{ post.date | date: date_format }}</span>
-                    </td>
-                    <td class="post-meta" data-label="Localisation">
-                        <p>{{ post.localisation }}</p>
-                    </td>
-                    <td class="post-meta" data-label="Paramètre">
-                        <p>{{ post.parametre }}</p>
-                    </td>
-                    <td class="post-meta" data-label="Niveau">
-                        {% if post.niveau == "Critical" %}
-                        <div class="container">
-                            <div class="progress progress-striped-cri">
-                                <div class="progress-bar-cri">
+                <thead>
+                    <tr id="post-sub">
+                        <th class="post-subtitle"> Titre </th>
+                        <th class="post-subtitle"> Description </th>
+                        <th class="post-subtitle"> Localisation </th>
+                        <th class="post-subtitle"> Paramètre </th>
+                        <th class="post-subtitle"> Niveau </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for post in posts %}
+                    <tr>
+                        <td class="post-title" data-label="Titre">
+                            <a href="{{ post.url | relative_url }}">{{ post.title }}</a></td>
+                        <td class="post-meta" data-label="Description">
+                            <p>{{ post.desc }}</p>
+                            {%- assign date_format = site.minima.date_format | default: "%d/%m/%Y" -%}
+                            <span class="post-date">{{ post.date | date: date_format }}</span>
+                        </td>
+                        <td class="post-meta" data-label="Localisation">
+                            <p>{{ post.localisation }}</p>
+                        </td>
+                        <td class="post-meta" data-label="Paramètre">
+                            <p>{{ post.parametre }}</p>
+                        </td>
+                        <td class="post-meta" data-label="Niveau">
+                            {% if post.niveau == "Critical" %}
+                            <div class="container">
+                                <div class="progress progress-striped-cri">
+                                    <div class="progress-bar-cri">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        {% elsif post.niveau == "Medium" %}
-                        <div class="container">
-                            <div class="progress progress-striped-med">
-                                <div class="progress-bar-med">
+                            {% elsif post.niveau == "Medium" %}
+                            <div class="container">
+                                <div class="progress progress-striped-med">
+                                    <div class="progress-bar-med">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        {% elsif post.niveau == "Low" %}
-                        <div class="container">
-                            <div class="progress progress-striped-low">
-                                <div class="progress-bar-low">
+                            {% elsif post.niveau == "Low" %}
+                            <div class="container">
+                                <div class="progress progress-striped-low">
+                                    <div class="progress-bar-low">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        {% endif %}
-                    </td>
-                </tr>
-            {% endfor %}
-        </table>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
         </ul>
         {%- endif -%}
     </div>

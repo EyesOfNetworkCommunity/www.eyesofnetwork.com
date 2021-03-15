@@ -18,6 +18,7 @@ permalink: /fr/security
                         <th class="post-subtitle"> Localisation </th>
                         <th class="post-subtitle"> Paramètre </th>
                         <th class="post-subtitle"> Niveau </th>
+                        <th class="post-subtitle"> Statut </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -58,6 +59,13 @@ permalink: /fr/security
                                     </div>
                                 </div>
                             </div>
+                            {% endif %}
+                        </td>
+                        <td class="post-meta" data-label="Status">
+                            {% if post.status == "fixed" %}
+                                <p>Corrigé</p>
+                            {% elsif post.status == "not fixed" %}
+                                <p>Non corrigé</p> 
                             {% endif %}
                         </td>
                     </tr>

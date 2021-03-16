@@ -61,11 +61,11 @@ permalink: /fr/security
                             </div>
                             {% endif %}
                         </td>
-                        <td class="post-meta" data-label="Status">
+                        <td class="post-meta" data-label="Statut" style="text-align: center">
                             {% if post.status == "fixed" %}
-                                <p>Corrigé</p>
+                                <p><i class="fas fa-check" style="color:greenyellow"></i></p>
                             {% elsif post.status == "not fixed" %}
-                                <p>Non corrigé</p> 
+                                <p><i class="fas fa-times" style="color:red"></i></p> 
                             {% endif %}
                         </td>
                     </tr>
